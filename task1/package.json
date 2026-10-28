@@ -1,0 +1,29 @@
+{
+  "name": "say_hello_world",
+  "version": "1.0.0",
+  "description": "`logs hello world`",
+  "keywords": [
+    "hello"
+  ],
+  "homepage": "https://github.com/narutopanu1999-lang/nodejs-http-#readme",
+  "bugs": {
+    "url": "https://github.com/narutopanu1999-lang/nodejs-http-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narutopanu1999-lang/nodejs-http-.git"
+  },
+  "license": "ISC",
+  "author": "me",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}
