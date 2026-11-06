@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce_startup",
+  "version": "1.0.0",
+  "description": "Ecommerce site",
+  "license": "ISC",
+  "author": "Me",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
