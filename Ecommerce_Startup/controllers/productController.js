@@ -1,11 +1,13 @@
+const serviceMethod = require('../services/productServices.js');
+
 const productFetchData  = (req, res) => {
-    res.send("Fetching all products");
+    serviceMethod.Data(res);
 }
 const  productAddData = (req, res) => {
-    res.send("Adding a new product");
+    serviceMethod.addToData(res);
 }
 const productFetchDataById =  (req, res) => {
-    res.send("Fetching product with id: " + req.params.id);
+    serviceMethod.fetchDataById(res, req.params.id);
 } 
 
 module.exports = {
