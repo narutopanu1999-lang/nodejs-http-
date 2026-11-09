@@ -1,16 +1,31 @@
+const {sendResponse,sendErrorResponse} = require('../utils/response.js');
+
 const userList = (req, res) => {
     res.send("Fetching all users");
-}
+};
 
 const userAdd = (req, res) => {
-    res.send("Adding a new user");
-}
+    const { name, email } = req.body;
+
+    if (!name || !email) {
+        return sendErrorResponse(res, "Name and email are required");
+    }
+
+    const id = Date.now();
+
+    sendResponse(res, id, req.body);
+};
+
 const userFetchById = (req, res) => {
-    res.send("Fetching user with id: " + req.params.id);
-}
+    const id = req.params.id;
+
+    sendResponse(res, id, {
+        message: "Fetching user by ID"
+    });
+};
 
 module.exports = {
     userList,
     userAdd,
     userFetchById
-}
+};

@@ -1,4 +1,5 @@
-const cartController =(req, res) => {
+const cartController = (req, res) => {
+    if(req.query)
     res.send("Fetching Cart");
 }
 

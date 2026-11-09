@@ -6,6 +6,7 @@ const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 
+app.use(express.json())
 app.get('/', (req, res) => {
     res.send("Welcome to the E-commerce API");
 });

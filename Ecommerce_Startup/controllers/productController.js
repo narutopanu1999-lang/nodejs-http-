@@ -1,3 +1,5 @@
+
+
 const serviceMethod = require('../services/productServices.js');
 
 const productFetchData  = (req, res) => {
